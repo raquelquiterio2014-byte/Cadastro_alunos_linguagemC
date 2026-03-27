@@ -21,6 +21,13 @@ typedef
 
 Vetor de structs
 
+Funções
+
+strcmp (comparação de strings)
+
+Menu interativo
+
+
 
 ✅ Código completo (pronto pra rodar)
 #include <stdio.h>
@@ -142,15 +149,13 @@ ________________________________________
 2.	Cole o código 
 3.	Compile: 
 gcc sistema.c -o sistema
-4.	Execute: 
+4.	Execute:
+	./sistema
+(ou sistema.exe no Windows)
 
 
 
 
 
 
-Funções
 
-strcmp (comparação de strings)
-
-Menu interativo
