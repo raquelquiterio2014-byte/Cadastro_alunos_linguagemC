@@ -1,15 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main () {
+int main(void) {
+    int *ponteiro = malloc(sizeof *ponteiro);
+    if (ponteiro == NULL) {
+        fputs("Falha ao alocar memoria.\n", stderr);
+        return 1;
+    }
 
-    //Exemplo de ponteiro simples;
-
-    int *ponteiro = (int*) malloc(sizeof(int));
     *ponteiro = 11;
-
-    printf ("O conteudo do ponteiro tem o numero %d\n", *ponteiro);
-
+    printf("O conteudo apontado e %d\n", *ponteiro);
     free(ponteiro);
-
     return 0;
 }
